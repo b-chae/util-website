@@ -7,5 +7,6 @@ const textSizeElement = document.getElementById("text-size");
 const textColorSelectElement = document.getElementsByName("text-color")[0];
 const backgroundSelectElement =
   document.getElementsByName("background-color")[0];
-const ctx = document.getElementById("canvas").getContext("2d");
+const canvas = document.getElementById("canvas");
+const ctx = canvas.getContext("2d");
 const downloadButtonElement = document.getElementById("download");
