@@ -37,3 +37,7 @@ downloadButtonElement.addEventListener("click", () => {
   link.href = document.getElementById("canvas").toDataURL();
   link.click();
 });
+
+canvas.addEventListener("dragstart", (e) => {
+  console.log(e);
+});
