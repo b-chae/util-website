@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.title {
+  @apply p-8 text-3xl text-gray-800;
+}
+
+.body {
+  display: flex;
+  @apply m-12;
+}
+
+.canvas {
+  @apply ml-12;
+}
+
+canvas {
+  width: 200px;
+  height: 200px;
+  @apply border rounded;
+}
+
+.form {
+  @apply p-4 border rounded-lg;
+  width: 500px;
+}
+
+.form__input {
+  @apply flex flex-col my-4;
+}
+
+.helperText {
+  @apply text-sm text-gray-400 text-end mt-1;
+}
+
+label {
+  @apply text-sm mb-2 ml-2 text-gray-800;
+}
+
+textarea,
+select,
+input {
+  @apply border rounded p-2;
+}
+
+input {
+  @apply text-end;
+}
+
+button {
+  @apply rounded w-full h-10 bg-red-500 text-white mt-4;
+}
+
+.outline {
+  @apply border rounded bg-white border-gray-700 text-gray-700;
+}
